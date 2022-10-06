@@ -1,0 +1,51 @@
+@media (max-width: 850px) {     /*De 0 à 850px*/
+
+    /* NAV */
+
+    h1 {
+        font-size: 44px;
+        margin-bottom: 25px;
+    }
+    .wallE {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: none;
+       
+    }
+
+    .wallE ul {
+        flex-direction: column;
+    }
+
+    .wallE ul li {
+        margin-bottom: 26px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    /* SECTION EVE */
+
+    .sectionEve {
+        height: auto; /*Pour d'adapter à son contenu, dans la version desktop, on lui avait donner une height*/
+        padding: 35px 19px ;
+    }
+
+    .eveContent {
+        display: flex;
+        flex-direction: column-reverse;
+        width: auto;            /*Pour d'adapter au contenu*/
+
+    }
+
+    .eveDescription {
+        
+    }
+
+
+
+
+
+}

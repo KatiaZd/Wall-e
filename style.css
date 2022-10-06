@@ -1,0 +1,221 @@
+/* VARIABLES */
+
+:root {         /*A la racine*/
+    --blue: #2C9ED7 ;
+    --gray: #424242 ;
+    --pink: #C9868E ;
+    --purple: #483970 ;
+    --orange: #C26C5C ;
+}
+
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; /*Ne sort pas de son parent quand on ajoute des margins et des paddings*/
+    
+}
+
+h1, h2, h4 {
+    text-transform: uppercase;
+}
+
+h2 {
+    color: var(--gray);
+    font-size: 96px;
+    text-align: center;
+}
+
+h3 {
+    color: var(--blue);
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 48px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    color: var(--gray);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 29px;
+}
+
+section {
+    height: 100vh;
+}
+
+        /* HEADER */
+/* barre de nav. en haut à droite
+- mettre le texte en blanc (dans le a)
+- retirer le soulignage MAIS le mettre quand on passe la souris dessus (dans le a)
+- mettre le texte en ligne
+- changer la typo (dans le *, vue que sa s'applique à tout le site)
+- changer la taille (dans le a)
+- ajouter des paddings (dans nav)
+*/
+
+header {
+    background-image: url('img/img-homebg-ordi.png');
+    background-size: cover;
+    height: 100vh;
+
+    
+}
+    
+        /* NAV */
+
+
+nav {
+    display: flex;
+    justify-content: space-between; /*Pour que le logo soit à droit et la barre de nav à gauche*/
+    padding: 1.8vw 8.4vw; /*Conversion px en vw*/
+    align-items: center; /*Pour centrer la nav avec le logo*/
+}
+
+ul {
+    display: flex;
+}
+
+.menuItems li {
+    margin-left: 3.5vw;  /*1442px = 100vw. Donc 1px = 3.5vw*/
+
+}
+
+/*
+- background white pour les icones
+- border radius des icones
+- taille et couleurs de la police
+- position du bloc
+*/
+
+.wallE img {
+    background-color: white;
+    border-radius: 50%;
+    height: 132px;
+    width: 132px;
+    object-fit: scale-down;
+}
+
+h1 {
+    color: white;
+    font-size: 110px;
+}
+
+.wallE {
+    display: inline-block;  /* Pour que les icones soit aligné à l'enfant le large, donc le h1 */
+    /* Pour déplacer la div wallE, idée 1 : position right pour que ça marche en responsive */
+    position: absolute;
+    right: 25%; /*25% de marge à droite, par rapport au parent*/
+    top: 30vh;
+    /* idée 2 - 
+    */
+
+    
+}
+
+.wallE ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+                /* SECTION EVE  */
+
+
+.sectionEve {
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.eveContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 750px;
+}
+
+.eveContent span {
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.eveDescription {
+    margin-left: 4vw;
+
+}
+
+.eveDescription h3 {
+    margin-bottom: 13px;
+}
+
+        /* SECTION MCCREA */
+
+.sectionMccrea {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(239, 239, 239, 0.1) 0%, rgba(72, 57, 112, 0.1) 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+.mccreaContent {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.mccreaContent article {
+    width: 250px;
+    height: 400px;
+    position: relative;
+}
+
+.captainUn {
+    background-color: var(--pink);
+    align-self: flex-end;
+}
+
+.captainDeux {
+    background-color: var(--purple);
+    align-self: center;
+}
+
+.captainTrois {
+    background-color: var(--orange);
+    align-self: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
